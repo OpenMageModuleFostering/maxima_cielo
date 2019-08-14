@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Maxima_Cielo",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Módulo de pagamento desenvolvido por Fillipe Almeida Dutra.",
+    "authors": [
+    {
+        "name": "Fillipe Almeida Dutra",
+        "email": "lawsann@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
