@@ -28,7 +28,7 @@
 	
 	<modules>
 		<Maxima_Cielo>
-			<version>1.5.2</version>
+			<version>1.5.3</version>
 		</Maxima_Cielo>
 	</modules>
 	
@@ -143,11 +143,11 @@
 		</layout>
 		<translate>
 			<modules>
-				<translations>
+				<Maxima_Cielo>
 					<files>
 						<default>Maxima_Cielo.csv</default>
 					</files>
-				</translations>
+				</Maxima_Cielo>
 			</modules>
 		</translate>
 	</frontend>
@@ -155,13 +155,42 @@
 	<adminhtml>
 		<translate>
 			<modules>
-				<translations>
+				<Maxima_Cielo>
 					<files>
 						<default>Maxima_Cielo.csv</default>
 					</files>
-				</translations>
+				</Maxima_Cielo>
 			</modules>
 		</translate>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<sales>
+							<children>
+								<order>
+									<children>
+										<actions>
+											<children>
+												<cielo-capture translate="title">
+													<title>Cielo - Capture</title>
+												</cielo-capture>
+												<cielo-cancel translate="title">
+													<title>Cielo - Cancel</title>
+												</cielo-cancel>
+												<cielo-consult translate="title">
+													<title>Cielo - Consult WebService</title>
+												</cielo-consult>
+											</children>
+										</actions>
+									</children>
+								</order>
+							</children>
+						</sales>
+					</children>
+				</admin>
+			</resources>
+		</acl>
 	</adminhtml>
 	
 	
